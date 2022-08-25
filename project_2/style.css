@@ -29,11 +29,26 @@ body {
     width: 400px;
 }
 
+.progress-container:before {
+    content: '';
+    background-color: rgb(153, 142, 142);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
 .progress {
     background-color: black;
     position: absolute;
     top: 50%;
     left: 0;
+    transform: translateY(-50%);
     height: 4px;
-    width: 50%;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
 }
