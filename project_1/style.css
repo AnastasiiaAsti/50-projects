@@ -12,6 +12,7 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    background-color: blanchedalmond;
 }
 
 .container {
@@ -61,5 +62,14 @@ body {
     .panel:nth-of-type(7),
     .panel:nth-of-type(8) {
         display: none;
+    }
+
+    .panel h3 {
+        font-size: 16px;
+    }
+
+    .panel.active h3 {
+        opacity: 1;
+        transition: opacity 0.3s ease-in 0.4s;
     }
 }
