@@ -26,7 +26,7 @@ body {
     position: relative;
     margin-bottom: 30px;
     max-width: 100%;
-    width: 400px;
+    width: 600px;
 }
 
 .progress-container:before {
@@ -51,4 +51,23 @@ body {
     width: 0%;
     z-index: -1;
     transition: .4s ease;
+}
+
+.circle {
+    background-color: lightgrey;
+    color: rgb(153, 142, 142);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(153, 142, 142);
+    transition: .4s ease;
+}
+
+.circle.active {
+    border-color: black;
+    color: black;
+    background-color: rgb(153, 142, 142);
 }
