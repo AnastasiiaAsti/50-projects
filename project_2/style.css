@@ -71,3 +71,28 @@ body {
     color: black;
     background-color: rgb(153, 142, 142);
 }
+
+.btn {
+    background-color:  rgb(153, 142, 142);
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: rgb(201, 189, 189);
+    cursor: not-allowed;
+}
