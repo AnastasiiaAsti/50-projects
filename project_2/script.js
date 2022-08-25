@@ -12,12 +12,14 @@ const circles = document.querySelectorAll('.circle');
 //loop through circles and for each circle 
 //if index is less than currentActive add active class
 //otherwise remove active class
+//change width of progress element from 0-33%-66%-100%
 
 
 let currentActive = 1
 
 next.addEventListener('click', () => {
     currentActive++
+
     if (currentActive > circles.length) {
         currentActive = circles.length
     }
@@ -27,10 +29,9 @@ next.addEventListener('click', () => {
 
 prev.addEventListener('click', () => {
     currentActive--
-    if (currentActive < circles.length) {
+    if (currentActive < 1) {
         currentActive = circles.length
     }
-
     update()
 })
 
@@ -42,4 +43,16 @@ function update() {
             circle.classList.remove('active')
         }
     })
+
+    const actives = document.querySelectorAll('.active')
+    progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
+    
+    if (currentActive === 1) {
+        prev.disabled = true
+    } else if(currentActive === circles.length) {
+        next.disabled = true
+    } else {
+        prev.disabled = false
+        next.disabled = false
+    }
 }
