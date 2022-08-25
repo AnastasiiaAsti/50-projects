@@ -17,4 +17,23 @@ body {
 }
 
 .container {
+    text-align: center;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 400px;
+}
+
+.progress {
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 4px;
+    width: 50%;
 }
