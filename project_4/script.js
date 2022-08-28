@@ -1,20 +1,9 @@
-//grabbing panels
-const panels = document.querySelectorAll('.panel')
-//console.log(panels)
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
 
-//add eventListener to each panel that would listen for a click
-//remove active class and add active class to the panel on click
 
-//iterrating over nodeList of panels
-panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-    })
+btn.addEventListener('click', () => {
+    search.classList.toggle('active')
+    input.focus()
 })
-
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
-}
