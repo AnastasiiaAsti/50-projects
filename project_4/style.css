@@ -8,7 +8,6 @@ body {
     font-family: 'Muli', sans-serif;
     margin: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -16,3 +15,52 @@ body {
     background-color: blanchedalmond;
 }
 
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.search .input {
+    background-color: rgb(123, 91, 52);
+    color: blanchedalmond;
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+::placeholder {
+    color: blanchedalmond;
+    opacity: .8;
+}
+
+.btn {
+    cursor: pointer;
+    color: blanchedalmond;
+    background-color: rgb(123, 91, 52);
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(220px);
+}
