@@ -6,22 +6,27 @@
 
 body {
     font-family: 'Muli', sans-serif;
+    background-color: blanchedalmond;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 10px;
+}
+
+.box {
+    background-color: rgb(230, 164, 84);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    background-color: blanchedalmond;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-}
-
-.container h1 {
-    text-align: center;
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
