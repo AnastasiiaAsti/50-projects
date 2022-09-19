@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --main-bg: rgb(238,174,202);
+}
+
 body {
     font-family: 'Muli', sans-serif;
     margin: 0;
@@ -13,7 +17,7 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background: rgb(238,174,202);
+    background: var(--pink-bg);
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
@@ -27,4 +31,30 @@ body {
 .container h1 {
     text-align: center;
     margin-bottom: 30px;
+}
+
+.container a {
+    text-decoration: none;
+    color: purple;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px black solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
 }
