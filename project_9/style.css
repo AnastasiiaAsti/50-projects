@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     height: 100vh;
     overflow: hidden;
     background: url('https://images.unsplash.com/photo-1488188840666-e2308741a62f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=1600&q=60');
     background-size: cover;
 }
 
+.btn {
+    border: none;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem;
+    font-size: 2rem;
+    opacity: 0.85;
+}
