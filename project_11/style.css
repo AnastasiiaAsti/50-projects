@@ -12,12 +12,31 @@ body {
     justify-content: center;
     height: 100vh;
     overflow: hidden;
-    background-color: blanchedalmond;
+    background-color: rgb(119, 142, 168);
 }
 
-.container {
-    display: flex;
+
+
+.key {
+    border: 1px solid rgb(61, 74, 88);
+    background-color: rgb(134, 160, 190);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
     flex-direction: column;
-    height: 90vh;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
 }
 
+.key small {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 15px;
+}
