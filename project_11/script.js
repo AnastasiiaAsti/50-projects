@@ -6,7 +6,7 @@ window.addEventListener('keydown', (event) => {
     // console.log(e)
     insert.innerHTML = `
     <div class="key">
-    ${event.key === '   ' ? 'Space' : event.key}
+    ${event.key === ' ' ? 'Space' : event.key}
     <small>event.key</small>
 </div>
 
